@@ -11,3 +11,6 @@ def sobre(request):
 
 def contato(request):
     return HttpResponse('<h1>CONTATO - Django</h1>')
+
+def teste(request):
+    return HttpResponse('<h1>TESTE - Django</h1>')
