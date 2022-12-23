@@ -1,8 +1,10 @@
-# from django.urls import path
-# from recipes.views import home, sobre, contato, teste
+# from django.contrib import admin
+from django.urls import path
+from recipes.views import home, sobre, contato
 
-# urlpatterns = [
-#     path('', home),
-#     path('sobre/', sobre),
-#     path('contato/', contato),
-# ]
+urlpatterns = [
+    # path('admin/', admin.site.urls),
+    path('', home),
+    path('sobre/', sobre),
+    path('contato/', contato),
+]
