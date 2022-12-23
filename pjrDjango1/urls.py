@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.http import HttpResponse
+
+def my_view(request):
+    return HttpResponse('Hello Django')
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('', include('recipes.urls')),
+    path('sobre/', my_view),
 ]
