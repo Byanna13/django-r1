@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
-    <!-- <link rel="stylesheet"  media="'screen" href="main.css"> -->
+    <link rel="stylesheet"  media="'screen" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -134,7 +134,7 @@
             color: var(--color-primary);
         }
         .main-content {
-            background: cyan;
+            background: cornflowerblue;
             padding-top: 1%;
         }
         .temp {
@@ -148,7 +148,7 @@
         } */
         .main-content-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: var(--spacing-gutter-large);
         }
         .recipe {
@@ -161,12 +161,20 @@
             max-width: 100%;
         }
         .recipe-list-item {
-            max-width: 64rem;
+            max-width: 60rem;
         }
         .recipe-list-item:hover {
             transform: scale(1.25);
         }
-        .recipe-title-contaier {
+        .recipe-meta-container {
+            padding: var(--spacing-gutter-medium);
+            padding-top: 2rem;
+        }
+        .recipe-meta {
+            padding: var(--spacing-gutter-medium);
+            padding-top: 2rem;
+        }
+        .recipe-title-container {
             padding: var(--spacing-gutter-medium);
             padding-bottom: 2rem;
         }
