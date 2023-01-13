@@ -163,12 +163,16 @@
         }
         .recipe-meta-container {
             display: flex;
+            flex-flow: row wrap;
             background-color: var(--color-gray-3);
-            padding: 1rem;
+            padding: var(--spacing-gutter-medium);
         }
         .recipe-meta {
-            padding-left: 60px;
-            text-align: left;
+            flex-flow: column nowrap;
+            display: flex;
+            flex-shrink: 1;
+            flex-grow: 1;
+            text-align: center;
         }
         
         .recipe-title-container {
@@ -204,7 +208,7 @@
             transition: all 300ms ease-in-out;
         }
         .recipe-footer a:hover {
-            filter: brightness(2);
+            filter: brightness(0.08);
         }
         .main-footer {
             display: flex;
