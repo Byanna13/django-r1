@@ -23,7 +23,7 @@ from recipes.views import home, sobre, contato
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('recipes.urls')),
-    # path('', home),
+    path('', home),
     # path('sobre/', sobre),
     # path('contato/', contato),
 ]
