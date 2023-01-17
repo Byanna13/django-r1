@@ -1,49 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 {% include 'recipes/partials/head.html' %}
 
 <body>
   {% include 'recipes/partials/header.html' %}
-  <center>
-    <div class="container">
-      <div class="recipe recipe-list-item">
-        <h2>Hambúrguer Simples</h2>
-      </div>
-    </div>
-  </center>
   <main class="main-content-container">
     <div class="main-content main-content-list container">
-      <div class="recipe recipe-list-item">
-        <div class="recipe-cover">
-          <center>
-            <img
-              src="https://imagensemoldes.com.br/wp-content/uploads/2020/03/Foto-X-Burguer-Hamburguer-Cheeseburguer-PNG.png"
-              alt="" width="84%" />
-          </center>
+      <div class="container">
+        <div id="content">
+          <div class="card-title">
+            <h1 class="title">Hambúrguer Simples</h1>
+            <!-- <hr class="hr"> -->
+            <span class="datatemp">
+              <i class="fas fa-calendar-alt"></i>
+              16/10/2021 às 11:21
+            </span>
+          </div>
+          <div id="conteiner">
+            <div id="sidebar">
+              <div class="recipe-cover">
+                <img
+                  src="https://imagensemoldes.com.br/wp-content/uploads/2020/03/Foto-X-Burguer-Hamburguer-Cheeseburguer-PNG.png" />
+              </div>
+              <div class="card">
+                <div>
+
+                  <h3 class="infotemp">Informações do autor da receita</h3>
+                  <hr>
+                  <li><b>Nome:</b> Reserva de Minas</li>
+                  <li><b>Profissão:</b> Empreendedor</li>
+                  <li><b>Email:</b> sac@reservademinas.com.br</li>
+                  <li><b>Facebook:</b> <a target="_blank" href="https://www.facebook.com/reservademinas/">Reserva
+                      de Minas</a></li>
+                  <li><b>Instagram:</b> <a target="_blank"
+                      href="https://www.instagram.com/reservademinas/">@reservademinas</a></li>
+
+                </div>
+              </div>
+            </div>
+            <div class="card cardtemp">
+              <div class="">
+                <h3>Ingredientes</h3>
+                <hr>
+                <li>450 ml de leite</li>
+                <li>4 colheres de chocolate em pó</li>
+                <li>2 colheres de açúcar</li>
+                <li>80 ml de café pronto</li>
+                <li>1 colher de doce de leite Reserva de Minas</li>
+
+                <h3>Modo de Preparo</h3>
+                <hr>
+                <li>Passo 1: Em uma leiteira colocar o leite, o chocolate em pó, o açúcar.</li>
+                <li>Passo 2: Levar a mistura ao fogo e mexer com a ajuda de um fouet.</li>
+                <li>Passo 3: Acrescentar o café pronto e o doce de leite.</li>
+                <li>Passo 4: Mexer novamente. Já está pronto!</li>
+                <li>Passo 5: Na hora de servir, você pode enfeitar a borda da caneca com doce de leite e acrescentar
+                  uma pitadinha de canela em pó.</li>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <ul>
+                <h3>Patrocinadores e criadores do site</h3>
+                <hr>
+                <li>Passo 1: Em uma leiteira colocar o leite, o chocolate em pó, o açúcar.</li>
+                <li>Passo 2: Levar a mistura ao fogo e mexer com a ajuda de um fouet.</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
+
+
       </div>
-      <div class="main-content-container">
-        <div class="recipe recipe-list-item">
-          <p>Ingredientes:</p>
-        </div>
-      </div>
-      <div class="main-content-container">
-        <div class="recipe recipe-list-item">
-          <p>Informações do autor da receita</p>
-        </div>
-      </div>
-      <div class="main-content-container">
-        <div class="recipe recipe-list-item">
-          <p>Patrocinadores e criadores do site</p>
-        </div>
-      </div>
-  </main>
-  <footer class="recipe-footer">
-    <a class="recipe-read-more button button-dark button-full-width" href="{% url 'home' %}">
-      <!-- <i class="fas fa-eye"></i> -->
-      Voltar
-    </a>
+
+    </div>
+    <footer class="recipe-footer">
+      <a class="recipe-read-more button button-dark button-full-width" href="{% url 'home' %}"> 
+        <span>Voltar</span>
+      </a>
   </footer>
+  </main>
 </body>
 
 </html>
