@@ -14,6 +14,9 @@ from django.http import HttpResponse, HttpResponseRedirect
 def home(request):
     return render(request,'recipes/pages/home.html', context={'name': 'Fabiana Souza'})
 
+def newpag(request):
+    return render(request,'recipes/pages/newpag.html', context={'name': 'Fabiana Souza'})
+
 # def home(request):
 #     return render(request,'recipes/pages/home.html')
 
