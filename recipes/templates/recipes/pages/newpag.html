@@ -4,11 +4,13 @@
 
 <body>
   {% include 'recipes/partials/header.html' %}
-  <div class="container">
-    <div class="recipe recipe-list-item">
-      <p>Ok</p>
+  <center>
+    <div class="container">
+      <div class="recipe recipe-list-item">
+        <h2>Hambúrguer Simples</h2>
+      </div>
     </div>
-  </div>
+  </center>
   <main class="main-content-container">
     <div class="main-content main-content-list container">
       <div class="recipe recipe-list-item">
@@ -22,20 +24,26 @@
       </div>
       <div class="main-content-container">
         <div class="recipe recipe-list-item">
-          <p>Ok</p>
+          <p>Ingredientes:</p>
         </div>
       </div>
       <div class="main-content-container">
         <div class="recipe recipe-list-item">
-          <p>Ok</p>
+          <p>Informações do autor da receita</p>
         </div>
       </div>
       <div class="main-content-container">
         <div class="recipe recipe-list-item">
-          <p>Ok</p>
+          <p>Patrocinadores e criadores do site</p>
         </div>
       </div>
   </main>
+  <footer class="recipe-footer">
+    <a class="recipe-read-more button button-dark button-full-width" href="{% url 'home' %}">
+      <!-- <i class="fas fa-eye"></i> -->
+      Voltar
+    </a>
+  </footer>
 </body>
 
 </html>

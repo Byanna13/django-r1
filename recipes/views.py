@@ -17,6 +17,9 @@ def home(request):
 def newpag(request):
     return render(request,'recipes/pages/newpag.html', context={'name': 'Fabiana Souza'})
 
+def part(request):
+    return render(request,'recipes/part/part.html', context={'name': 'Fabiana Souza'})
+
 # def home(request):
 #     return render(request,'recipes/pages/home.html')
 
